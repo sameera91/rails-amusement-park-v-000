@@ -23,10 +23,21 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-           <!--  nav here -->
+            <nav>
+              <ul>
+                <li><%= link_to "Home", root_path %></li>
+                <li><%= link_to "Sign up", new_user_path %></li>
+                <li><%= link_to "Sign in", signin_path %></li>
+              </ul>
+              <div id="user_admin">
+                <p>ADMIN</p>
+              </div>
+            </nav>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
+
+
     </div>
 
     <!-- content -->

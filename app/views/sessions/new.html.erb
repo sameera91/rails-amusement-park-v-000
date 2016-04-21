@@ -1,0 +1,8 @@
+
+<p>Select your name</p>
+
+<%= form_tag signin_path, :method => 'post' do %>
+   <%= collection_select(:user, :id, User.all, :id, :name) %>
+   <br><br>
+  <%= submit_tag "Sign In" %>
+<% end %>
