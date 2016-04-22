@@ -1,5 +1,4 @@
 class Ride < ActiveRecord::Base
-  attr_accessor :user
   belongs_to :user
   belongs_to :attraction
 
